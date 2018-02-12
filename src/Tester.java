@@ -21,7 +21,7 @@ public class Tester {
 		int start = 0;
 		int pathTo = StdRandom.uniform(SUPERGRAF.vert());
 //		int pathTo = 4;
-		System.out.println("Find path to: \n"+pathTo+"\n");
+		System.out.println("Here is the conflict!");
 		
 		BFS bfs = new BFS(SUPERGRAF, start);
 
@@ -62,13 +62,11 @@ public class Tester {
 			System.out.print(path.pop()+" - ");
 			System.out.println(path.pop());
 	}
-	
-}
-}
-	public static void test(double arg1, double arg2){
 
-System.out.println("double+double");
-}
+	public static void test(double arg1, double arg2){
+		double i = arg1*2;
+		System.out.println("double+double");
+		}
 	
 	public static void main(String[] args) {
 		
