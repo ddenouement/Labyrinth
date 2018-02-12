@@ -57,18 +57,18 @@ public class Tester {
 //				System.out.println("Visited: "+dfs.visited());
 				
 			System.out.println();
-			}
-		}
-		
-	}
-	public static void print() {
-		int upTo = path.size();
+	 	int upTo = path.size();
 		for (int r = 0; r < upTo-1; r++)
 			System.out.print(path.pop()+" - ");
 			System.out.println(path.pop());
 	}
 	
-	
+}
+}
+	public static void test(double arg1, double arg2){
+
+System.out.println("double+double");
+}
 	
 	public static void main(String[] args) {
 		
