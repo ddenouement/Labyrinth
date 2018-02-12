@@ -55,16 +55,18 @@ public class Tester {
 			else {
 				System.out.print("Path (DFS):\nDistance: "+dfs.distance(pathTo)+"\n");
 //				System.out.println("Visited: "+dfs.visited());
-				int upTo = path.size();
-			for (int r = 0; r < upTo-1; r++)
-				System.out.print(path.pop()+" - ");
-				System.out.println(path.pop());
+				
 			System.out.println();
 			}
 		}
 		
 	}
-	
+	public static void print() {
+		int upTo = path.size();
+		for (int r = 0; r < upTo-1; r++)
+			System.out.print(path.pop()+" - ");
+			System.out.println(path.pop());
+	}
 	
 	
 	
