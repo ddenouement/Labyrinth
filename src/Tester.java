@@ -16,14 +16,14 @@ public class Tester {
 	public Tester()
 	{
 		In in = new In(testFile);
-		Graph G = new Graph(in);
+		Graph SUPERGRAF = new Graph(in);
 		Stack<Integer> path = new Stack<Integer>();
 		int start = 0;
-		int pathTo = StdRandom.uniform(G.vert());
+		int pathTo = StdRandom.uniform(SUPERGRAF.vert());
 //		int pathTo = 4;
 		System.out.println("Find path to: \n"+pathTo+"\n");
 		
-		BFS bfs = new BFS(G, start);
+		BFS bfs = new BFS(SUPERGRAF, start);
 
 		if (bfs.pathTo(pathTo) == null)
 			System.out.println( "This path doen's exist");
@@ -43,7 +43,7 @@ public class Tester {
 		}
 		
 		
-		DFS dfs = new DFS(G, start);
+		DFS dfs = new DFS(SUPERGRAF, start);
 		
 		path.clear();
 		if (dfs.pathTo(pathTo) == null)
