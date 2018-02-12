@@ -21,7 +21,7 @@ public class Tester {
 		int start = 0;
 		int pathTo = StdRandom.uniform(G.vert());
 //		int pathTo = 4;
-		System.out.println("Find path to: \n"+pathTo+"\n");
+		System.out.println("Here is the conflict!");
 		
 		BFS bfs = new BFS(G, start);
 
@@ -65,7 +65,10 @@ public class Tester {
 		
 	}
 	
-	
+	public static void test(double arg1, double arg2){
+		double i = arg1*2;
+		System.out.println("double+double"+i);
+		}
 	
 	
 	public static void main(String[] args) {
